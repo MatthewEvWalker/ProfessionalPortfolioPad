@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioPad</title>
-</head>
-
-<body>
-    <header>
-        <h1>Portfolio<span class="pad">Pad</span></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>  
-    </header>
-    <div class="header-img"></div>
-    <h2>This Is Me</h2>
-    <h2></h2>
-    <div class="content">
-
-    </div>
-    <div>
-        <img class="me-img" src="./assets/images/my-portrait-img.jpg"Image of me on rock area class="float-left" />
-    </div>
-    <section>
-        <p>
-            yup this is a message
-        </p>
-    </section>
-
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PortfolioPad</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Matthew<span class="last-name">Walker</span></h1>
+                <nav>
+                    <!-- links on the top right -->
+                     <a href="#about-me">About Me</a>
+                     <a href="#work">Work</a>
+                     <a href="#contact-me">Contact Me</a>
+                </nav>  
+            </div>
+            <!-- header at the top left  -->
+        </header>
+        <!-- main -->
+        <main>
+            <section id="about-me">
+                <!-- paragraph section on the top of the image of me -->
+                
+                <!-- picture of me div -->                    <h2>About Me</h2>
+                <div>
+                    <img class="me-img" src="./assets/images/my-portrait-img.jpg"/>
+                </div>
+                <div>
+                    <p>Yup This Is Me</p>
+                </div>
+                </section>
+                <section id="work">
+                    <h2>Work</h2>
+                    <!-- water images div -->
+                    <div class="flex-water-img">
+                        <img src="./assets/images/water dots.jpg">
+                        <img src="./assets/images/water dots.jpg">
+                        <img src="./assets/images/water dots.jpg">
+                        <img src="./assets/images/water dots.jpg">
+                    </div>
+                    <p> Hover over one of these boxes!</p>
+            </section>
+        </main>
+       
+            
+        <!-- footer -->
+        <footer id="contact-me">
+          <h2>Contact Me</h2>
+            <p>
+            This was tough but I'm done. Contact me at <a href="https://github.com/MatthewEvWalker" target="_blank">My GitHub</a>
+            </p>
+            <p>Matthew Walker</p>
+        </footer>
+    </body>
 </html>

@@ -1,59 +1,168 @@
 body {
-    background-color: rgb(220, 226, 227);
+  background-color: #1f2833;
 }
 
 header {
-    height: 100px;
-    padding: 10px;
-    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
-    background-color: #1a2137;
-    color: #ccd3ec;
-    align-items: center;
+  height: 120px;
+  width: 100%;
+  font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+  background-color: #1a2137;
+  color: #ccd3ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* gives header a border, pushes it in from space around 
+curves the border */
+
+header > div {
+  width: 95%;
+  height: 100%;
+  border: solid;
+  border-color: lightblue;
+  border-width: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 header h1 {
-    display: block;
-    font-size: 38px;
+  width: 30%;
 }
 
-header h1 .pad {
-    color:rgb(125, 220, 235)
+/* changes the color of "Walker" of the header */
+
+header h1 .last-name {
+  color: rgb(125, 220, 235);
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    flex-direction: row;
-    text-decoration: none;
-    gap: 50px;
-    list-style: none;
+h2 {
+  color: lightblue;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 60%;
+}
+
+/* Changes color of nav and gets ric of the bullet points */
 
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: lightblue;
+  justify-content: center;
 }
 
-.header-img {
-    height: 100px;
+/* changes the nav color if cursor hovers over */
+
+nav a:hover {
+  color: blue;
+}
+
+/* if screen is below 770 the page changes to a column 
+and the nav changes color */
+
+@media screen and (max-width: 770px) {
+  header > div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header h1 {
     width: 100%;
-    background-image: url("../images/header-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    border: 10px;
-    border-color: aqua;
+    text-align: center;
+  }
+  nav {
+    width: 90%;
+    background-color: #1f2833;
+  }
+}
+/* if screen below 700px then the paragraph changes width 
+to 100% */
+
+@media screen and (max-width: 700px) {
+  div > p {
+    width: 100%;
+  }
 }
 
+/* div that holds me img and text */
+#about-me > div {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image of me characteristics */
 .me-img {
-    float: left;
-    height: auto;
-    width: 220px;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(126, 202, 230);
+  width: 220px;
+  height: auto;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(126, 202, 230);
+}
+/* the div of the water imgs */
+.flex-water-img {
+  background-color: green;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
 
+/* gives border to the water imgs, sets the opacity to 100
+and sizes them */
 
+#work > div img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 3px solid black;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* if curosr hovers the water imgs it changes to 50 
+opacity */
+
+#work > div img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* Affects the div of text in "about me" div
+centers, color, width and margins from the sides,
+padding makes it taller/shorter */
+
+div p {
+  display: flex;
+  background-color: #4e70df;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 20px;
+  border: solid;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10%;
+}
+
+p {
+  text-align: center;
+  text-shadow: #1a2137;
+  color: lightblue;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
